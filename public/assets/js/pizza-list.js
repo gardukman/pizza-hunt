@@ -1,7 +1,5 @@
-const { response } = require("express");
-
-// calls from pizza-list on pizza-list.html
 const $pizzaList = document.querySelector('#pizza-list');
+
 const getPizzaList = () => {
   fetch('/api/pizzas')
     .then(response => response.json())
